@@ -3,19 +3,7 @@ import { useReducer } from "react";
 export type COPY_ACTION_TYPE = { type: "copied" } | { type: "done" };
 export type WINDOW_HEIGHT_ACTION_TYPE = { type: boolean };
 
-const copyReducer = (_: any, action: COPY_ACTION_TYPE) => {
-  switch (action.type) {
-    case "copied": {
-      return true;
-    }
-    case "done": {
-      return false;
-    }
-    default: {
-      return false;
-    }
-  }
-};
+
 
 function App() {
   return (
